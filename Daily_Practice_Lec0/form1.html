@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>More Complex Form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <input name="name" type="text" placeholder="Name">
+            <input name="password" type="password" placeholder="Password">
+        </div>
+
+        <div>
+            Favorite color ?
+            <input name="color" type="radio" value="red"> Red
+            <input name="color" type="radio" value="green"> Green
+            <input name="color" type="radio" value="blue"> Blue
+            <input name="color" type="radio" value="other"> Other
+        </div>
+
+        <div>
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Vietnam">
+                <option value="China">
+                <option value="USA">
+                <option value="Russia">
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
