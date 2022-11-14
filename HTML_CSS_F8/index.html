@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<!--
+    Tag in HTML
+    1. h1-h6 : heading, size decreasing
+    2. p : paragraph
+    3. img
+    4. a: anchor -> attach a link
+    5. ul, li : unorderd list/ list item ||| ol -> listing number
+    6. table
+    7. input
+    8. button
+    9. div
+-->
+
+<html>
+    <head>
+        <title>Turorial HTML</title>
+        <meta charset="utf-8"> <!--support Vietnamese-->
+        
+        <!--External: Using .css file-->
+        <link rel="stylesheet" href="main.css">
+        
+        <!--Internal: Using style tag inside html file-->
+        <!--<style> 
+            h1{
+                color: red;
+                font-size: 20px;
+            }
+        </style>-->
+    
+    </head>
+    
+    <body>
+
+        <!--Intro to HTML-->
+        <div>
+            <h1>Hello World!</h1>
+            
+            <a href="https://fullstack.edu.vn/learning/html-css?id=28595e0f-ee7e-46a8-bdb5-fdf842674496">Go to web page 1</a>
+            
+            <ul>
+                <li>HTML,CSS ?</li>
+                <li>Basic concept</li>
+                <li>Installation</li>
+                <li>...</li>
+            </ul>
+            
+            <input type="text">
+            <input type="checkbox">
+            <input type="radio">
+    
+            <button>Subscribe</button>
+
+            <table>
+                <thead>
+                    <th>Students</th>
+                    <th>Name</th>
+                    <th>Id</th>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>James the Lumberjack</td>
+                        <td>000000</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td>Trường bắn</td>
+                        <td>000001</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        
+        </div>
+        
+        <!--An example-->
+        <div>   
+            <h1>Sinh viên thu nhập "nghìn đô" từ "Game siêu đạo chích"</h1>
+            
+            <p>Với mong muốn tái hiện trò chơi gắp thú của tuổi thơ trong phiên bản online, Đặng Ngọc Sơn - Founder tại F8 cho ra mắt ứng dụng "Game siêu đạo chích". Cuối năm 2015, ứng dụng này đã bước đầu chạy thử nghiệm tại Việt Nam và mang lại nguồn thu nhập cao cho tác giả.</p>
+            
+            <img src="https://i3.ytimg.com/vi/aXwRFbXInyE/maxresdefault.jpg" alt="Sinh viên thu nhập nghìn đô từ Game siêu đạo chích" width="100%" />
+            
+            <p>Về ý tưởng thực hiện dự án, Sơn chia sẻ: "Sau khi tìm hiểu về "Internet of things", mình nảy ra ý tưởng thực hiện một dự án điều khiển thiết bị qua Internet theo mô hình "Nhà thông minh", "Nông nghiệp thông minh" … Trong một lần vô tình xem clip trò chơi gắp thú bên Nhật, mình đã nảy ra ý tưởng biến máy gắp thú trở thành một trò chơi online, từ đó phát triển game phong phú hơn và mang theo một cốt truyện. Mong muốn của mình là đưa người chơi trở về ký ức tuổi thơ nhưng chỉ cần ngồi trước máy tính có thể điều khiển cỗ máy ở xa, gắp trúng sẽ được gửi quà về tận nhà".</p>  
+        </div>
+    
+        <!--CSS in HTML-->
+        <h1 style="color: red; font-size:50px">3 way to use CSS in HTML</h1> <!--edit directly in a tag using attribute-->
+        <div>
+            <ol>
+                <li>Internal</li> 
+                <li>External</li> 
+                <li>Inline</li>  
+            </ol>
+        </div>
+
+        <!--CSS selectors-->
+        <div>
+            <h1 id="first-head">CSS selectors?</h1>
+            <h1 class="second-head">Selectors...</h1>
+            <h2 class="second-head">ID & class</h2>
+        </div>
+        
+        <!--CSS selectors example-->
+        <p class="class-1">Đoạn văn 1.1</p>
+        <p class="class-1">Đoạn văn 1.2</p>
+
+        <p class="class-2 class-3">Đoạn văn 2.1</p>
+        <p class="class-2 class-3">Đoạn văn 2.2</p>
+
+        <div class="class-4">
+            <p class="class-5">Đoạn văn 3</p>
+        </div>
+
+        <p class="class-6">Đoạn văn 4 - thẻ p</p>
+        <div class="class-6">Nội dung 5 - thẻ div</div>
+
+        <p class="class-7">Đoạn văn 6</p>
+        <p class="class-8">Đoạn văn 7</p>
+
+        <h3>Tiêu đề 8</h3>
+        <h4>Tiêu đề 9</h4>
+
+        <ul class="list">
+        <li>Item 1</li> 
+        <li>Item 2</li> 
+        <li>Item 3
+            <ul>
+                <li>Item 1 (con Item 3)</li>
+                <li>Item 2 (con Item 3)</li>
+            </ul>
+        </li> 
+        </ul>
+
+        <p class="class-9">Đoạn văn 10</p>
+        <p>Đoạn văn 11</p>
+        <p>Đoạn văn 12</p>
+
+        <p class="class-10">Đoạn văn 13</p>
+        <p>Đoạn văn 14</p>
+        <p>Đoạn văn 15</p>
+
+        <div>Vật cản</div>
+
+        <p>Đoạn văn 16</p>
+        <p>Đoạn văn 17</p>
+        <p>Đoạn văn 18</p>
+    </body>
+    
+</html>

@@ -1,0 +1,70 @@
+#first-head{
+    color: red;
+    font-size: 50px;
+}
+
+.second-head{
+    color: green;
+    font-size: 20px;
+}
+
+/*select all tags*/
+/**{
+    font-style:italic;
+}
+
+/*select all p tags*/
+/*p{
+    text-decoration: underline;
+}*/
+
+/*select all tags name class-1*/
+.class-1{
+    color: red;
+}
+
+/*select two tags*/
+.class-2.class-3{
+    color:green;
+}
+
+/*select tag name class-5 which is child of class-4*/
+.class-4 .class-5{
+    color: violet;
+}
+
+/*choose all tag name class-6*/
+p.class-6{
+    color:aqua;
+}
+
+/*choose all tag h3, h4*/
+h3, h4{
+    color:brown;
+}
+
+/*choose all tag li which is children of class list*/
+.list li{
+    color: deepskyblue;
+}
+
+
+/* Lựa chọn toàn bộ thẻ li là con trực tiếp của thẻ có class list */
+.list > li {
+    color: fuchsia;
+}
+
+/* Lựa chọn 1 thẻ p đứng liền kề sau class-9 */
+.class-9 + p {
+    color: goldenrod;
+}
+
+/* Lựa chọn toàn bộ thẻ p đứng sau class-10 */
+.class-10 ~ p {
+    color: limegreen;
+}
+
+[class]::after {
+    /* Bạn có thể comment dòng dưới đây để biết tác dụng của nó */
+    content: " ("  attr(class) ")";
+}
